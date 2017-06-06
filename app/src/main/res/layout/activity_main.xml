@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp1.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/questions"
+            android:text="1.  test" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/testing"
+                style="@style/radioButton"
+                android:onClick="answer1A"
+                android:text="blah" />
+
+            <RadioButton
+                style="@style/radioButton"
+                android:onClick="answer1B"
+                android:text="blah" />
+
+            <RadioButton
+                style="@style/radioButton"
+                android:onClick="answer1C"
+                android:text="blah" />
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/questions"
+            android:text="2.  Test" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/radioButton"
+                android:onClick="answer2A"
+                android:text="blah" />
+
+            <RadioButton
+                style="@style/radioButton"
+                android:onClick="answer2B"
+                android:text="blah" />
+
+            <RadioButton
+                style="@style/radioButton"
+                android:onClick="answer2C"
+                android:text="blah" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions"
+            android:text="3.  Test" />
+
+        <LinearLayout style="@style/horizontalLinearLayout">
+
+            <CheckBox
+                style="@style/checkBoxButton"
+                android:text="blah" />
+
+            <CheckBox
+                style="@style/checkBoxButton"
+                android:text="blah" />
+
+            <CheckBox
+                style="@style/checkBoxButton"
+                android:text="blah" />
+
+            <CheckBox
+                style="@style/checkBoxButton"
+                android:text="blah" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/questions"
+            android:text="4.  Test" />
+
+        <EditText
+            android:id="@+id/answerField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="answer">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/submitQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:onClick="submitQuiz"/>
+
+    </LinearLayout>
+</ScrollView>
