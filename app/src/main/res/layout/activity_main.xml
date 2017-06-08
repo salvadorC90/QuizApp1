@@ -10,99 +10,101 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp"
-        android:orientation="vertical"
         android:descendantFocusability="beforeDescendants"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
 
         <TextView
             style="@style/questions"
-            android:text="1.  test" />
+            android:text="1.  How many questions are on this quiz?" />
 
         <RadioGroup
             android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RadioButton
                 android:id="@+id/answer1A"
                 style="@style/radioButton"
-                android:text="blah" />
+                android:text="4" />
 
             <RadioButton
-                style="@style/radioButton"
                 android:id="@+id/answer1B"
-                android:text="blah" />
+                style="@style/radioButton"
+                android:text="1" />
 
             <RadioButton
-                style="@style/radioButton"
                 android:id="@+id/answer1C"
-                android:text="blah" />
+                style="@style/radioButton"
+                android:text="2" />
         </RadioGroup>
 
 
         <TextView
             style="@style/questions"
-            android:text="2.  Test" />
+            android:text="2.  How many answer are in this question?" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RadioButton
-                style="@style/radioButton"
                 android:id="@+id/answer2A"
-                android:text="blah" />
+                style="@style/radioButton"
+                android:text="6" />
 
             <RadioButton
-                style="@style/radioButton"
                 android:id="@+id/answer2B"
-                android:text="blah" />
+                style="@style/radioButton"
+                android:text="1" />
 
             <RadioButton
-                style="@style/radioButton"
                 android:id="@+id/answer2C"
-                android:text="blah" />
+                style="@style/radioButton"
+                android:text="3" />
         </RadioGroup>
 
         <TextView
             style="@style/questions"
-            android:text="3.  Test" />
+            android:text="3.  What are the answers to question 1 and 2?" />
 
         <LinearLayout style="@style/horizontalLinearLayout">
 
             <CheckBox
-                style="@style/checkBoxButton"
                 android:id="@+id/answer3A"
-                android:text="blah" />
+                style="@style/checkBoxButton"
+                android:text="3" />
 
             <CheckBox
-                style="@style/checkBoxButton"
                 android:id="@+id/answer3B"
-                android:text="blah" />
+                style="@style/checkBoxButton"
+                android:text="1" />
 
             <CheckBox
-                style="@style/checkBoxButton"
                 android:id="@+id/answer3C"
-                android:text="blah" />
+                style="@style/checkBoxButton"
+                android:text="4" />
 
             <CheckBox
-                style="@style/checkBoxButton"
                 android:id="@+id/answer3D"
-                android:text="blah" />
+                style="@style/checkBoxButton"
+                android:text="6" />
 
         </LinearLayout>
 
         <TextView
             style="@style/questions"
-            android:text="4.  Test" />
+            android:text="4.  What is the 3rd word of question 3?" />
 
         <EditText
             android:id="@+id/answerField"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:hint="answer"
-            android:inputType="text"
-            android:layout_marginBottom="16dp">
+            android:inputType="text">
 
         </EditText>
 
@@ -110,9 +112,9 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
             android:layout_gravity="center"
-            android:onClick="submitQuiz"/>
+            android:onClick="submitQuiz"
+            android:text="Submit" />
 
     </LinearLayout>
 </ScrollView>
