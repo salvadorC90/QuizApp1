@@ -10,30 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
 
         <TextView
             style="@style/questions"
             android:text="1.  test" />
 
         <RadioGroup
+            android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
-                android:id="@+id/testing"
+                android:id="@+id/answer1A"
                 style="@style/radioButton"
-                android:onClick="answer1A"
                 android:text="blah" />
 
             <RadioButton
                 style="@style/radioButton"
-                android:onClick="answer1B"
+                android:id="@+id/answer1B"
                 android:text="blah" />
 
             <RadioButton
                 style="@style/radioButton"
-                android:onClick="answer1C"
+                android:id="@+id/answer1C"
                 android:text="blah" />
         </RadioGroup>
 
@@ -48,17 +50,17 @@
             android:orientation="horizontal">
             <RadioButton
                 style="@style/radioButton"
-                android:onClick="answer2A"
+                android:id="@+id/answer2A"
                 android:text="blah" />
 
             <RadioButton
                 style="@style/radioButton"
-                android:onClick="answer2B"
+                android:id="@+id/answer2B"
                 android:text="blah" />
 
             <RadioButton
                 style="@style/radioButton"
-                android:onClick="answer2C"
+                android:id="@+id/answer2C"
                 android:text="blah" />
         </RadioGroup>
 
@@ -70,18 +72,22 @@
 
             <CheckBox
                 style="@style/checkBoxButton"
+                android:id="@+id/answer3A"
                 android:text="blah" />
 
             <CheckBox
                 style="@style/checkBoxButton"
+                android:id="@+id/answer3B"
                 android:text="blah" />
 
             <CheckBox
                 style="@style/checkBoxButton"
+                android:id="@+id/answer3C"
                 android:text="blah" />
 
             <CheckBox
                 style="@style/checkBoxButton"
+                android:id="@+id/answer3D"
                 android:text="blah" />
 
         </LinearLayout>
@@ -91,15 +97,17 @@
             android:text="4.  Test" />
 
         <EditText
-            android:id="@+id/answerField1"
-            android:layout_width="match_parent"
+            android:id="@+id/answerField"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="answer">
+            android:hint="answer"
+            android:inputType="text"
+            android:layout_marginBottom="16dp">
 
         </EditText>
 
         <Button
-            android:id="@+id/submitQuiz"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
