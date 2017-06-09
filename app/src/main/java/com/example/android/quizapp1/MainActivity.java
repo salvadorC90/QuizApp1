@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import static com.example.android.quizapp1.R.id.answer3B;
 import static com.example.android.quizapp1.R.id.answerField;
 
 
@@ -42,9 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
         //Question 3
         CheckBox answer3A = (CheckBox) findViewById(R.id.answer3A);
+        CheckBox answer3B = (CheckBox) findViewById(R.id.answer3B);
         CheckBox answer3C = (CheckBox) findViewById(R.id.answer3C);
+        CheckBox answer3D = (CheckBox) findViewById(R.id.answer3D);
 
-        if (answer3A.isChecked() && answer3C.isChecked()) {
+        if (answer3A.isChecked() && answer3C.isChecked() && !(answer3B.isChecked()) && !(answer3D.isChecked())) {
             score += 1;
         } else {
             score += 0;
